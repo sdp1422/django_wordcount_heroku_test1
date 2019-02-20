@@ -1,0 +1,38 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../static/css/resultStyle.css">
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+    <img src="../static/img/nyang.jpg">
+    <div>
+        <h1 class="divH1">당신이 입력한 텍스트는 <span id="divSpan">{{total}}<!-- 총 단어 수--></span>로 구성되어 있습니다.</h1>
+
+        <a id="divA" href="{%url 'home' %}">다시 하기</a>
+        <br>
+        
+        <div id="divInput">
+            <h2 class="inputText">입력한 텍스트 : </h2>
+            <!--입력받은 전체 텍스트-->
+            {{full}}
+        </div>
+
+        <div id="divCount">
+            <h2 class="inputText">단어 카운트</h2>
+            <p>
+                    {% for a,b,c in textWord %}
+            
+                        {{a}} : {{b}}번 - {{c}}%
+                        <br>
+            
+                    {%endfor%}
+            </p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

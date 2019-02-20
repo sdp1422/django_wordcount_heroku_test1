@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    text-align: center;    
+}
+
+img {
+    height: 100%;
+    vertical-align: middle;
+    opacity: 0.2;
+    position: relative;
+}
+
+div {    
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    width: 100%;
+}
+
+div > h1 {
+    font-size: 70px;
+    text-align: center;
+    color: yellow;
+    text-shadow: 3px 2px black;
+    background-color: black;
+    opacity: 0.5;
+}
+
+p {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    width: 100%;    
+    font-size: 30px;
+}
+
+a {
+    font-size: 30px;    
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    width: 100%;    
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: yellow;
+}
